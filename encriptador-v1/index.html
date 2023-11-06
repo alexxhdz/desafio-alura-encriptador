@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Alura:Desafio 1</title>
+</head>
+<body>
+    <!--Barra de navegacion de la pagina web-->
+    <header>
+        <a class="contenedor-logo" href="">
+            <img class="logo" src="../IMG/logovinandcode.png" alt="vinandcode">
+            <h2>Encripta</h2>
+        </a>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+    <!---->
+    <div class="padre">
+        <div class="hijo">
+            <div class="columna">
+                <h3>Introduce el texto que quieres encriptar:</h3>
+                <textarea id="texto_sin_cifrar" rows="5" cols="50"></textarea>
+                <button onclick="encriptar()">Encriptar</button>
+            </div>
+            <div class="columna">
+                <h3>Texto encriptado:</h3>
+                <textarea id="texto_cifrado" rows="5" cols="50"></textarea>
+                <button onclick="descifrar()">Descifrar</button>
+            </div>
+        </div>
+        <div class="hijo">
+            <div class="columnaTexto">
+                <h3>¿Que es encriptar?</h3>
+                <p>
+                    Encriptar un texto es un proceso mediante el cual se transforma la información legible en un formato cifrado, incomprensible para cualquier persona que no posea la clave adecuada para desencriptarlo. Se utiliza un algoritmo de cifrado que realiza una serie de operaciones matemáticas complejas sobre el texto original, ocultando su contenido real. El resultado es un texto ilegible, que se conoce como texto cifrado. Este proceso se utiliza ampliamente en la seguridad de la información y la protección de la privacidad. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="padre">
+        <div class="hijo2">
+            <div class="columna2">
+                <h3>Texto descifrado:</h3>
+                <textarea id="texto_descifrado" rows="5" cols="50"></textarea>
+            </div>
+        </div> 
+        <div class="hijo2">
+            <div class="columna2">
+                <img class="decifra" src="/IMG/decifra.jpg" alt="Decifra">
+            </div>
+        </div>
+    </div>
+    <!--Crea una contraseña segura-->
+    <div class="padre">
+        <div class="hijo">
+            <div class="columna">
+                <h3>Crea tu contraseña segura</h3>
+                <label for="passwordLength">Longitud de la contraseña:</label>
+                <input type="number" id="passwordLength" value="15">
+                <button onclick="generateAndDisplayPassword()">Generar contraseña</button>
+            </div>
+            <div class="columna">
+                <label for="password">Contraseña generada:</label>
+                <input class="ContraGen" type="text" id="password" readonly>
+            </div>
+        </div>
+    </div>
+    <!--Inicio de footer-->
+    <footer>
+        <div class="cajaPadre">
+            <div class="cajaHija">
+                <p>Desafio Alura: Desarrolla un encriptador de textos</p>
+                <p>Irving Alejandro Hernandez Ramirez</p>
+                <p>Estudiante de One Oracle Next Education</p>
+                <p>Fecha: 30/04/2023</p>
+            </div>
+            <div class="cajaHija">
+                <a target="_blank" href="https://github.com/jandro-github?tab=repositories">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/irving-alejandro-h-097b17262/">Linkedln</a>
+                <a href="">Perfil One</a>
+            </div>
+        </div>
+        <div class="cajaImagenes">
+            <img class="Alura" src="../IMG/Imagen3.png" alt="Logo Alura">
+            <img class="One" src="../IMG/Imagen1.png" alt="Logo ONE">
+        </div>
+    </footer>
+
+    <script src="../JS/criptografia.js"></script>
+    <script src="../JS/contSegura.js"></script>
+    <script src="../JS/sha.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+body{
+  background-color: #0C134F;
+  color: rgb(237, 241, 245);
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Padre que contiene los elementos
+a centrar*/
+header{
+  background-color: #1D267D;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+/*Hijo*/
+header nav a{
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+  padding: 10px;
+}
+
+header nav a:hover{
+  color: #3b2e65;
+  background-color: antiquewhite;
+}
+
+header nav a:active{
+  color: #ffffff;
+  background-color: #ce0eb8;
+}
+
+/*Padre*/
+.contenedor-logo{
+  display: flex;
+  /*Se centra la imagen*/
+  align-items: center;
+}
+
+header .contenedor-logo h2{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/*Hijos*/
+header a .logo{
+  width: 50px;
+  padding: 10px;
+}
+
+/*Padre 1*/
+.padre{
+  background-color: #0C134F;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+  border-radius: 2%;
+}
+
+/*Padre 2*/
+.hijo{
+  background-color: #1D267D;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 500px;
+  border-bottom: 2px;
+  border-radius: 5px;
+}
+
+.columna{
+  background-color: #0C134F;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-bottom: 2px;
+  border-radius: 5px;
+}
+
+.padre .hijo .columna h3{
+  margin: 10px;
+  text-align: center;
+}
+
+.padre .hijo .columnaTexto{
+  background-color: #0C134F;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-bottom: 2px;
+  border-radius: 5px;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.padre .hijo .columnaTexto h3{
+  text-align: center;
+}
+
+.padre .hijo .columnaTexto p{
+  margin: 20px;
+}
+
+.padre .hijo .columna textarea{
+  width: 150px;
+  text-align: center;
+}
+
+.padre .hijo .columna button{
+  margin: 15px;
+  border: solid 1px #c411c4;
+  background-color: #c411c4;
+  color: aliceblue;
+  padding: 10px;
+}
+
+.padre .hijo .columna button:hover{
+  background-color: #0C134F;
+  color: beige;
+}
+
+.padre .hijo .columna button:active{
+  background-color: beige;
+  color: #0C134F;
+}
+
+
+.padre .hijo .columna label{  
+  margin: 10px;
+  text-align: center;
+}
+
+.padre .hijo .columna input{
+  border: solid 1px white;
+  text-align: center;
+}
+
+.padre .hijo .columna{
+  padding: 10px;
+}
+
+.hijo2{
+  background-color: #1D267D;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-bottom: 2px;
+  border-radius: 5px;
+}
+
+.padre .hijo2 .columna2 .decifra{
+  width: 390px;
+  height: 195px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.columna2{
+  background-color: #0C134F;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-bottom: 2px;
+  border-radius: 5px;
+}
+
+.padre .hijo2 h3{
+  text-align: center;
+}
+
+.padre .hijo2 .columna2 textarea{
+  text-align: center;
+  width: 300px;
+
+}
+
+footer{
+  background-color: #1D267D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .cajaPadre{
+  background-color: 1D267D;
+  margin: 10px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .cajaPadre .cajaHija{
+  background-color: 1D267D;
+  text-align: center;
+}
+
+footer .cajaPadre .cajaHija a{
+  text-decoration: none;
+  color: #9b82ee;
+}
+
+footer .cajaPadre .cajaHija a:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .cajaPadre .cajaHija a:active{
+  color: #d548f1;
+}
+
+footer .cajaImagenes{
+  background-color: 1D267D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .cajaImagenes .Alura{
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+}
+
+footer .cajaImagenes .One{
+  width: 150px;
+  height: 60px;
+  margin: 10px;
+}
+
+
+
+
+/*Media querys*/
+
+/*Media nos permite definir comportamientos 
+de nuestra pagina web*/
+@media (max-width: 680px){
+  header{
+      flex-direction: column;
+  }
+
+  /*Espaciado que tendra la etiqueta nav de arriba a abajo*/
+  nav{
+      /*De arriba a abajo*/
+      /*De izquierda a derecha*/
+      padding: 10px 0px;
+  }
+
+  .padre{
+    flex-direction: column;
+    width: auto;
+  }
+  .hijo{
+    flex-direction: column;
+    width: auto;
+  }
+  .hijo2{
+    flex-direction: column;
+    width: auto;
+  }
+  .columna{
+    flex-direction: column;
+    width: auto;
+  }
+  .columna2{
+    flex-direction: column;
+    width: auto;
+  }
+  .decifra{
+    margin: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    width: auto;
+  }
+  .padre .hijo .columnaTexto{
+    flex-direction: column;
+    width: auto;
+  }
+}
